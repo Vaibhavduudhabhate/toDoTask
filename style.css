@@ -112,9 +112,13 @@
     margin: 20px;
     font-size: 20px;
 }
+.taskList2{
+    margin: 20px;
+    font-size: 20px;
+}
 input[type="checkbox"] {
-    -webkit-appearance: none;
-    width: 20px;
+    -webkit-appearance: none;                            
+    width: 20px;      
     height: 20px;
     border-radius: 10px; 
     background-color: transparent; 
@@ -128,4 +132,113 @@ label{
     vertical-align: top;
 }
 
+@media screen and (max-width: 1000px) {
+  .tasks_container{
+     height: 100% ;
+     width: 300px ;
+   }
+   .left_container{
+     width: 300px;
+     height: 300px;
+     margin: 10px;
+   }
+   .right_container{
+     width: 300px;
+     height: 300px;
+     margin: 10px;
+   }
+ .tasks_container{
+   height: 600px ;
+   width: 100% ;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   color: #ffff;
+ }
+ /* .container{ */
+   /* height: 100%; */
+ /* } */
+ .search{
+   text-align: center !important;
+   margin: 10px;
+ }
+}
 
+@media screen and (max-width: 728px) {
+ .left_container{
+     width: 235px;
+   }
+   .right_container{
+     width: 235px;
+   }
+   .addTaskBtn{
+     width: 125px;
+   }
+}
+
+@media screen and (max-width: 600px) {
+ .search{
+   text-align: center !important;
+   margin: 10px;
+ }
+ .tasks_container{
+   height: 100% ;
+   width: 300px ;
+   flex-direction: column;
+ }
+ .left_container{
+   width: 300px;
+   height: 300px;
+ }
+ .right_container{
+   width: 300px;
+   height: 300px;
+ }
+ .container{
+   height: 100%;
+ }
+}
+
+@media screen and (max-width: 400px) {
+ .left_container{
+   width: 250px;
+   height: 250px;
+   margin-bottom: 10px;
+ }
+ .right_container{
+   width: 250px;
+   height: 250px;
+ }
+ .addTaskBtn{
+   width: 125px;
+ }
+}
+.editBtn {
+  float: inline-end;
+  height: 30px;
+  width: 30px;
+  color: aqua;
+  background-color: transparent;
+  border: none;
+}
+.deleteBtn{
+float: inline-end;
+height: 30px;
+width: 30px;
+color: red;
+background-color: transparent;
+outline: none;
+border: none;
+}
+#completed{
+  width: 170px !important;
+  display: inline-block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@media screen and (max-width: 700px) {
+  #completed{
+    width: 110px !important;
+  }
+}
